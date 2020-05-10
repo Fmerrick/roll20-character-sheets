@@ -272,7 +272,7 @@
                 <table style="width:100%">
                 <tr>
                     <td>
-                        <input class="secondary-attr-input" data-i18n-placeholder="current" placeholder="current" type="text" min="0" name="attr_hp">
+                        <input class="secondary-attr-input" data-i18n-placeholder="current" placeholder="current" type="text" min="0" name="attr_hitpoints">
                     </td>
                     <td style="text-align: center">/</td>
                     <td>
@@ -306,7 +306,7 @@
                 <table style="width:100%">
                 <tr>
                     <td>
-                        <input class="secondary-attr-input" data-i18n-placeholder="current" placeholder="current" type="text" min="0" name="attr_hp">
+                        <input class="secondary-attr-input" data-i18n-placeholder="current" placeholder="current" type="text" min="0" name="attr_hitpoints">
                     </td>
                     <td style="text-align: center">/</td>
                     <td>
@@ -1048,9 +1048,9 @@
                 <tr>
                     <td><input type="checkbox" name="attr_language_own_inv_checkbox"></td>
                     <td class="skill-label" data-i18n="language(own)-u">Language(Own)(EDU)</td>
-                    <td><input class="skill-input" type="text" name="attr_education_inv" value="attr_education_inv"/></td>
-                    <td><button class='old-roll' type='roll' value='&{template:coc} {{name=Language(Own) Roll}} {{success=[[@{education_inv}]]}} {{hard=[[floor(@{education_inv}/2)]]}} {{extreme=[[floor(@{education_inv}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}' name='roll_language_own_inv_check' /></td>
-					<td><button class='new-roll' type='roll' value='&{template:coc-1} {{name=Language(Own) Roll}} {{success=[[@{education_inv}]]}} {{hard=[[floor(@{education_inv}/2)]]}} {{extreme=[[floor(@{education_inv}/5)]]}} {{roll1=[[1d100]]}}' name='roll_language_own_inv_check' /></td>
+                    <td><input class="skill-input" type="text" name="attr_language_own_inv" /></td>
+                    <td><button class='old-roll' type='roll' value='&{template:coc} {{name=Language(Own) Roll}} {{success=[[@{language_own_inv}]]}} {{hard=[[floor(@{language_own_inv}/2)]]}} {{extreme=[[floor(@{language_own_inv}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}' name='roll_language_own_inv_check' /></td>
+					<td><button class='new-roll' type='roll' value='&{template:coc-1} {{name=Language(Own) Roll}} {{success=[[@{language_own_inv}]]}} {{hard=[[floor(@{language_own_inv}/2)]]}} {{extreme=[[floor(@{language_own_inv}/5)]]}} {{roll1=[[1d100]]}}' name='roll_language_own_inv_check' /></td>
                 </tr>
                 <tr>
                     <td><input type="checkbox" name="attr_otherlanguage1_inv_checkbox"></td>
@@ -5164,7 +5164,7 @@
             <span style="font-weight:bold" data-i18n="Personal Description">Personal Description</span>
             <textarea name="attr_personal_description_value" class="backstory-box" style="width:97%;height:75px"></textarea>
             <span style="font-weight:bold" data-i18n="Ideology/Beliefs">Ideology/Beliefs</span>
-            <textarea name="attr_ideaology_beliefs_value" class="backstory-box" style="width:97%;height:75px"></textarea>
+            <textarea name="attr_ideology_beliefs_value" class="backstory-box" style="width:97%;height:75px"></textarea>
             <span style="font-weight:bold" data-i18n="Significant People">Significant People</span>
             <textarea name="attr_significant_people_value" class="backstory-box" style="width:97%;height:75px"></textarea>
             <span style="font-weight:bold" data-i18n="Meaningful Locations">Meaningful Locations</span>
