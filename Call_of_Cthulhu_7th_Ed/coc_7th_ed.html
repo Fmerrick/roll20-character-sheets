@@ -492,9 +492,9 @@
         <h4 class="section-head" data-i18n="sanity-u">Sanity</h4>
         <div class="section">
             <div class="sheet-row" style="width:100%;margin-bottom:4px">
-                <span><button class='old-roll' type='roll' value='&{template:coc} {{name=SAN Roll}} {{success=[[@{san}]]}} {{hard=[[floor(@{san}/2)]]}} {{extreme=[[floor(@{san}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}' name='roll_san_check' />
-				<button class='new-roll' type='roll' value='&{template:coc-1} {{name=SAN Roll}} {{success=[[@{san}]]}} {{hard=[[floor(@{san}/2)]]}} {{extreme=[[floor(@{san}/5)]]}} {{roll1=[[1d100]]}}' name='roll_san_check' /></span>
-                <input style="width:16%" class="secondary-attr-input" data-i18n-placeholder="4/5-u" placeholder="4/5" type="text" min="0" name="attr_sanity_thresh" value="floor(@{san_start}*4/5)" disabled="true">
+                <span><button class='old-roll' type='roll' value='&{template:coc} {{name=SAN Roll}} {{success=[[@{sanity}]]}} {{hard=[[floor(@{sanity}/2)]]}} {{extreme=[[floor(@{sanity}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}' name='roll_san_check' />
+				<button class='new-roll' type='roll' value='&{template:coc-1} {{name=SAN Roll}} {{success=[[@{sanity}]]}} {{hard=[[floor(@{sanity}/2)]]}} {{extreme=[[floor(@{sanity}/5)]]}} {{roll1=[[1d100]]}}' name='roll_san_check' /></span>
+                <input style="width:16%" class="secondary-attr-input" data-i18n-placeholder="4/5-u" placeholder="4/5" type="text" min="0" name="attr_sanity_thresh" value="floor(@{sanity_start}*4/5)" disabled="true">
                 <span>\</span>
                 <input style="width:22%" class="secondary-attr-input" data-i18n-placeholder="current" placeholder="current" type="text" min="0" name="attr_sanity">
                 <span>/</span>
@@ -712,9 +712,9 @@
         <h4 class="section-head" data-i18n="sanity-u">Sanity</h4>
         <div class="section">
             <div class="sheet-row" style="width:100%;margin-bottom:4px">
-                <span><button class='old-roll' type='roll' value='&{template:coc} {{name=SAN Roll}} {{success=[[@{san}]]}} {{hard=[[floor(@{san}/2)]]}} {{extreme=[[floor(@{san}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}' name='roll_san_check' />
-				<button class='new-roll' type='roll' value='&{template:coc-1} {{name=SAN Roll}} {{success=[[@{san}]]}} {{hard=[[floor(@{san}/2)]]}} {{extreme=[[floor(@{san}/5)]]}} {{roll1=[[1d100]]}}' name='roll_san_check' /></span>
-                <input style="width:16%" class="secondary-attr-input" placeholder="4/5" type="text" min="0" name="attr_sanity_thresh" value="floor(@{san_start}*4/5)" disabled="true">
+                <span><button class='old-roll' type='roll' value='&{template:coc} {{name=SAN Roll}} {{success=[[@{sanity}]]}} {{hard=[[floor(@{sanity}/2)]]}} {{extreme=[[floor(@{sanity}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}' name='roll_san_check' />
+				<button class='new-roll' type='roll' value='&{template:coc-1} {{name=SAN Roll}} {{success=[[@{sanity}]]}} {{hard=[[floor(@{sanity}/2)]]}} {{extreme=[[floor(@{sanity}/5)]]}} {{roll1=[[1d100]]}}' name='roll_san_check' /></span>
+                <input style="width:16%" class="secondary-attr-input" placeholder="4/5" type="text" min="0" name="attr_sanity_thresh" value="floor(@{sanity_start}*4/5)" disabled="true">
                 <span>\</span>
                 <input style="width:22%" class="secondary-attr-input" data-i18n-placeholder="current" placeholder="current" type="text" min="0" name="attr_sanity">
                 <span>/</span>
