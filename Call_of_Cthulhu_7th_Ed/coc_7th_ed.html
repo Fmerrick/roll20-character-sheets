@@ -310,7 +310,7 @@
                     </td>
                     <td style="text-align: center">/</td>
                     <td>
-                        <input class="secondary-attr-input" placeholder="max" type="number" min="0" name="attr_hp_max" value="floor((@{con}+@{siz})/(10-@{pulp_hp}))" disabled="true">
+                        <input class="secondary-attr-input" placeholder="max" type="number" min="0" name="attr_hitpoints_max" value="floor((@{con}+@{siz})/(10-@{pulp_hp}))" disabled="true">
                     </td>
                 </tr>
                 <tr>
@@ -357,11 +357,11 @@
             <table style="width:100%">
                 <tr>
                     <td>
-                        <input class="secondary-attr-input" data-i18n-placeholder="current" placeholder="current" type="text" min="0" name="attr_mp">
+                        <input class="secondary-attr-input" data-i18n-placeholder="current" placeholder="current" type="text" min="0" name="attr_magicpoints">
                     </td>
                     <td style="text-align: center">/</td>
                     <td>
-                        <input class="secondary-attr-input" placeholder="max" type="number" min="0" name="attr_mp_max" value="floor(@{pow}/5)" disabled="true">
+                        <input class="secondary-attr-input" placeholder="max" type="number" min="0" name="attr_magicpoints_max" value="floor(@{pow}/5)" disabled="true">
                     </td>
                 </tr>
             </table>
@@ -494,12 +494,12 @@
             <div class="sheet-row" style="width:100%;margin-bottom:4px">
                 <span><button class='old-roll' type='roll' value='&{template:coc} {{name=SAN Roll}} {{success=[[@{san}]]}} {{hard=[[floor(@{san}/2)]]}} {{extreme=[[floor(@{san}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}' name='roll_san_check' />
 				<button class='new-roll' type='roll' value='&{template:coc-1} {{name=SAN Roll}} {{success=[[@{san}]]}} {{hard=[[floor(@{san}/2)]]}} {{extreme=[[floor(@{san}/5)]]}} {{roll1=[[1d100]]}}' name='roll_san_check' /></span>
-                <input style="width:16%" class="secondary-attr-input" data-i18n-placeholder="4/5-u" placeholder="4/5" type="text" min="0" name="attr_san_thresh" value="floor(@{san_start}*4/5)" disabled="true">
+                <input style="width:16%" class="secondary-attr-input" data-i18n-placeholder="4/5-u" placeholder="4/5" type="text" min="0" name="attr_sanity_thresh" value="floor(@{san_start}*4/5)" disabled="true">
                 <span>\</span>
-                <input style="width:22%" class="secondary-attr-input" data-i18n-placeholder="current" placeholder="current" type="text" min="0" name="attr_san">
+                <input style="width:22%" class="secondary-attr-input" data-i18n-placeholder="current" placeholder="current" type="text" min="0" name="attr_sanity">
                 <span>/</span>
-                <input style="width:16%;margin-right:3px" class="secondary-attr-input" type="number" min="0" name="attr_san_max" placeholder="max" value="99-@{cthulhu_mythos}-@{cthulhu_mythos_inv}-@{cthulhu_mythos_da}-@{cthulhu_mythos_ow}-@{cthulhu_mythos_mdr}-@{cthulhu_mythos_et}-@{cthulhu_mythos_ic}" disabled="true">
-                <input style="width:14%" class="narrow-input" data-i18n-placeholder="start" placeholder="start" type="text" min="0" name="attr_san_start">
+                <input style="width:16%;margin-right:3px" class="secondary-attr-input" type="number" min="0" name="attr_sanity_max" placeholder="max" value="99-@{cthulhu_mythos}-@{cthulhu_mythos_inv}-@{cthulhu_mythos_da}-@{cthulhu_mythos_ow}-@{cthulhu_mythos_mdr}-@{cthulhu_mythos_et}-@{cthulhu_mythos_ic}" disabled="true">
+                <input style="width:14%" class="narrow-input" data-i18n-placeholder="start" placeholder="start" type="text" min="0" name="attr_sanity_start">
             </div>
             <div class="sheet-row" style="width:100%">
                 <div class="sheet-col" style="width:40%">
@@ -714,12 +714,12 @@
             <div class="sheet-row" style="width:100%;margin-bottom:4px">
                 <span><button class='old-roll' type='roll' value='&{template:coc} {{name=SAN Roll}} {{success=[[@{san}]]}} {{hard=[[floor(@{san}/2)]]}} {{extreme=[[floor(@{san}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}' name='roll_san_check' />
 				<button class='new-roll' type='roll' value='&{template:coc-1} {{name=SAN Roll}} {{success=[[@{san}]]}} {{hard=[[floor(@{san}/2)]]}} {{extreme=[[floor(@{san}/5)]]}} {{roll1=[[1d100]]}}' name='roll_san_check' /></span>
-                <input style="width:16%" class="secondary-attr-input" placeholder="4/5" type="text" min="0" name="attr_san_thresh" value="floor(@{san_start}*4/5)" disabled="true">
+                <input style="width:16%" class="secondary-attr-input" placeholder="4/5" type="text" min="0" name="attr_sanity_thresh" value="floor(@{san_start}*4/5)" disabled="true">
                 <span>\</span>
-                <input style="width:22%" class="secondary-attr-input" data-i18n-placeholder="current" placeholder="current" type="text" min="0" name="attr_san">
+                <input style="width:22%" class="secondary-attr-input" data-i18n-placeholder="current" placeholder="current" type="text" min="0" name="attr_sanity">
                 <span>/</span>
-                <input style="width:16%;margin-right:3px" class="secondary-attr-input" type="number" min="0" name="attr_san_max" placeholder="max" value="99-@{cthulhu_mythos}-@{cthulhu_mythos_inv}-@{cthulhu_mythos_da}-@{cthulhu_mythos_ow}-@{cthulhu_mythos_mdr}-@{cthulhu_mythos_et}-@{cthulhu_mythos_ic}" disabled="true">
-                <input style="width:14%" class="narrow-input" data-i18n-placeholder="start" placeholder="start" type="text" min="0" name="attr_san_start">
+                <input style="width:16%;margin-right:3px" class="secondary-attr-input" type="number" min="0" name="attr_sanity_max" placeholder="max" value="99-@{cthulhu_mythos}-@{cthulhu_mythos_inv}-@{cthulhu_mythos_da}-@{cthulhu_mythos_ow}-@{cthulhu_mythos_mdr}-@{cthulhu_mythos_et}-@{cthulhu_mythos_ic}" disabled="true">
+                <input style="width:14%" class="narrow-input" data-i18n-placeholder="start" placeholder="start" type="text" min="0" name="attr_sanity_start">
             </div>
             <div class="sheet-row" style="width:100%">
                 <div class="sheet-col" style="width:40%">
